@@ -1,0 +1,30 @@
+{
+  "name": "react-rest-client-bank-account",
+  "version": "0.1.0",
+  "private": false,
+  "devDependencies": {
+    "react-scripts": "0.8.4",
+    "chart.js": "*"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bootstrap": "^3.3.7",
+    "chartjs": "^0.3.24",
+    "create-react-class": "^15.5.3",
+    "jquery": "^3.1.1",
+    "react": "^15.4.1",
+    "react-bootstrap": "^0.30.7",
+    "react-chartjs2": "^1.1.0",
+    "react-dom": "^15.4.1",
+    "reqwest": "^2.0.5",
+    "sweetalert2": "^6.2.9",
+    "when": "^3.7.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

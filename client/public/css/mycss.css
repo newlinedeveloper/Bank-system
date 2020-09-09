@@ -1,0 +1,30 @@
+body{
+    background-color:black;
+    color:#999999;
+    font-size: 20px;
+}
+
+.well{
+    background: #222222;
+    color: #999999;
+    border-color: #222222;
+}
+
+.btn-default{
+    background: #222222;
+    color: #999999;
+    border-color: #222222;
+}
+
+.btn-default:hover{
+    background: #222222;
+    color: #999999;
+    border-color: #999999;
+}
+
+.black{
+    color: #0f0f0f;
+}
+.oprow:hover {
+    background-color: white;
+}

@@ -1,0 +1,42 @@
+{
+    "name": "php-slim-rest-bank-account",
+    "description": "A mini slim web-service that includes doctrine ORM and JsonWebToken Authentication method.",
+    "keywords": ["microframework", "rest", "router", "psr7", "doctrine", "jwt"],
+    "homepage": "https://github.com/Meshredded/php-slim-rest-bank-account",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akram MECHERI",
+            "email": "mecheri.akram@gmail.com",
+            "homepage": "http://www.mecheri.altervista.org/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "3.8.1",
+        "monolog/monolog": "^1.17",
+        "gamringer/php-json-patch": "^1.0",
+        "symfony/class-loader": "*",
+        "symfony/console": "*",
+        "doctrine/common": "*",
+        "doctrine/dbal": "*",
+        "doctrine/orm": "*",
+        "doctrine/doctrine-bundle": "*",
+        "firebase/php-jwt": "^4.0",
+        "palanik/corsslim": "dev-slim3",
+        "ipc/silex-pdo-service-provider": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "App\\": "src/App",
+            "App\\Controllers\\": "src/App/Controllers/",
+            "App\\Entities\\": "src/App/Entities/"
+        }
+    },
+	"scripts": {
+        "start": ["composer dump-autoload","php -S 0.0.0.0:8080 -t public public/index.php"],
+        "update-database": "vendor/bin/doctrine orm:schema-tool:update --force"
+	}
+
+}
